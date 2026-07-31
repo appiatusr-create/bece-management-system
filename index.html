@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Free BECE aggregate calculator and SHS programme advisory by Mr Chael I.T Department.">
+  <title>Free BECE Grade Checker | Mr Chael I.T Department</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap brand">
+    <div>
+      <h1>BECE Grade Checker</h1>
+      <p>Powered by <a href="https://mr-chael-it-department.appiatusr.chatgpt.site/" target="_blank" rel="noopener">Mr Chael I.T Department</a></p>
+    </div>
+    <nav class="nav"><a href="#checker">Check Your Grades</a><a href="#contact">Contact Us</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="card">
+        <span class="badge">Free • No login required</span>
+        <h2>Check your BECE aggregate <span class="accent">instantly.</span></h2>
+        <p class="muted">Simply enter your grades from 1 to 9. The checker will calculate your best six-subject aggregate and suggest a suitable SHS programme.</p>
+        <div class="features">
+          <div class="feature"><b>✓</b><span>No account, password or personal information needed.</span></div>
+          <div class="feature"><b>✓</b><span>English, Mathematics, Science and Social Studies are counted.</span></div>
+          <div class="feature"><b>✓</b><span>The best two grades from the remaining subjects are added.</span></div>
+        </div>
+      </div>
+      <div class="card simple-card">
+        <h3>How it works</h3>
+        <div class="score">6</div>
+        <p class="muted">subjects are used for the calculation.</p>
+        <p><b>Four core subjects</b><br>English + Mathematics + Science + Social Studies</p>
+        <p><b>Two best additional subjects</b><br>The lowest two grades from your other subjects</p>
+        <div class="notice">Enter whole-number grades only, from 1 to 9.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="checker">
+    <div class="wrap">
+      <div class="card checker-card">
+        <div class="section-title">
+          <div><span class="step">Step 1</span><h2>Enter Your BECE Grades</h2></div>
+          <p class="muted">Your grades are calculated on this device and are not submitted to us.</p>
+        </div>
+        <div id="formMessage" class="notice hidden"></div>
+        <form id="gradeForm">
+          <div class="grid grades-grid">
+            <div class="field core-field"><label for="english">English Language *</label><input id="english" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field core-field"><label for="mathematics">Mathematics *</label><input id="mathematics" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field core-field"><label for="science">Integrated Science *</label><input id="science" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field core-field"><label for="social">Social Studies *</label><input id="social" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field"><label for="computing">Computing *</label><input id="computing" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field"><label for="career_tech">Career Technology *</label><input id="career_tech" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field"><label for="creative_arts">Creative Arts &amp; Design *</label><input id="creative_arts" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field"><label for="rme">R.M.E. *</label><input id="rme" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+            <div class="field"><label for="ghanaian_language">Ghanaian Language/French *</label><input id="ghanaian_language" type="number" min="1" max="9" inputmode="numeric" required placeholder="1–9"></div>
+          </div>
+          <div class="actions">
+            <button class="btn calculate-btn" type="submit">Check My Aggregate</button>
+            <button class="btn secondary" type="reset">Clear Grades</button>
+          </div>
+        </form>
+      </div>
+      <div id="resultCard" class="card result hidden" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="wrap">
+      <div class="card contact-card">
+        <div><span class="step">Need assistance?</span><h2>Contact Mr Chael I.T Department</h2><p class="muted">For BECE checking, school selection and education-support services.</p></div>
+        <div class="contact-actions">
+          <a class="btn" href="tel:+233245155675">Call 024 515 5675</a>
+          <a class="btn secondary" href="mailto:info@mrchaelitdepartment.com">Send Email</a>
+          <a class="btn gold" href="https://mr-chael-it-department.appiatusr.chatgpt.site/" target="_blank" rel="noopener">Visit Our Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">© 2026 <a href="https://mr-chael-it-department.appiatusr.chatgpt.site/" target="_blank" rel="noopener">Mr Chael I.T Department</a> · <a href="tel:+233245155675">024 515 5675</a> · <a href="mailto:info@mrchaelitdepartment.com">info@mrchaelitdepartment.com</a><br><small>This tool provides guidance only. Official placement depends on the relevant education authorities and school availability.</small></div></footer>
+<script src="app.js"></script>
+</body>
+</html>
